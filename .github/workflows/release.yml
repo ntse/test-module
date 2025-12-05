@@ -14,7 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        # Note: Do not update this to v6 until https://github.com/techpivot/terraform-module-releaser/issues/332 is resolved
+        uses: actions/checkout@v5
 
       - name: Terraform Module Releaser
         uses: techpivot/terraform-module-releaser@v1

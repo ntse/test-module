@@ -5,7 +5,7 @@ This module discovers tagged AWS resources and provisions CloudWatch alarms with
 ## What it does
 - Autodiscovery via `aws_resourcegroupstaggingapi_resources` for ECS services, Lambda functions, CloudFront distributions, WAFv2 web ACLs, RDS instances/clusters, ElastiCache clusters, NAT Gateways, SQS queues, SNS topics, and ACM certificates using a configurable tag key/value.
 - Creates per-resource CloudWatch alarms with consistent naming `cw-${resource_type}-${resource_name}-${metric}` and configurable thresholds.
-- Sends all alarm actions to the configured SNS topic.
+- Sends all alarm actions to the configured SNS topic
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
